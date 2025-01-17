@@ -47,6 +47,9 @@ TagManager:
   - name: plants
     uniqueID: 507044429
     locked: 0
+  - name: extras
+    uniqueID: 2885718189
+    locked: 0
   - name: characters
     uniqueID: 3195076437
     locked: 0
