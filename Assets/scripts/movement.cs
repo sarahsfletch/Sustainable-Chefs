@@ -89,5 +89,16 @@ public class movement : MonoBehaviour
         // }
         // return true;
     }
+
+    void Interact()
+    {
+        Vector3 interactPos = transform.position + direction * speed * Time.deltaTime;
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactiveLayer);
+        if (collider != null)
+        {
+            collider.GetComponent<Interactable>()?.Interact();
+        }
+    }
 }
 
