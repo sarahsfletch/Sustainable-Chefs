@@ -8,6 +8,8 @@ public class movement : MonoBehaviour
     //apply movement to sprite
     public Animator animator;
 
+    public LayerMask solidObjectsLayer;
+
     private void Update () 
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
@@ -15,13 +17,30 @@ public class movement : MonoBehaviour
 
         Vector3 direction = new Vector3(horizontal, vertical);
 
-        AnimateMovement(direction);
+        if (direction.magnitude > 0) 
+        {
+            if (IsWalkable(direction)) 
+            {
+                transform.position += direction * speed * Time.deltaTime;
+                AnimateMovement(direction);
+            }
+        }
+        else 
+        {
+            AnimateMovement(Vector3.zero);
+        }
 
-        transform.position += direction * speed * Time.deltaTime;
+    //     if (IsWalkable(direction) == true) 
+    //     {
+    //         AnimateMovement(direction);
+    //     }
+
+    //     transform.position += direction * speed * Time.deltaTime;
+    // 
     }
 
     void AnimateMovement(Vector3 direction)
-    {
+    {   
         if (animator != null)
         {
             if (direction.magnitude > 0) 
@@ -37,6 +56,17 @@ public class movement : MonoBehaviour
                 animator.SetBool("isMoving", false);
             }
         }
+    }
+
+    private bool IsWalkable(Vector3 direction) 
+    {
+        Vector3 targetPos = transform.position + direction * speed * Time.deltaTime;
+
+        if (Physics2D.OverlapCircle(targetPos, 0.2f, solidObjectsLayer) != null) 
+        {
+            return false;
+        }
+        return true;
     }
 }
 
