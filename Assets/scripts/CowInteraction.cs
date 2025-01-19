@@ -3,53 +3,81 @@ using UnityEngine;
 public class CowInteraction : MonoBehaviour
 {
     [Header("NPC Settings")]
-    public string npcName = "NPC";
-    [TextArea] public string[] dialogueLines; // Dialogue lines for the NPC
+    public string npcName = "Cow";
 
+    [Header("UI Settings")]
+    public GameObject FeedPanel;          // The panel that shows feeding options (popup)
+    public GameObject interactionPrompt;  // The prompt that tells the player to press E
     private bool isPlayerNearby = false;
+
+    void Start()
+    {
+        // Ensure FeedPanel is hidden at the start
+        if (FeedPanel != null)
+        {
+            FeedPanel.SetActive(false); // Hide the FeedPanel initially
+        }
+    }
 
     void Update()
     {
-        // Check for player interaction
+        // If player is near and presses 'E', show or hide the FeedPanel
         if (isPlayerNearby && Input.GetKeyDown(KeyCode.E))
         {
-            StartDialogue();
+            ToggleFeedPanel();
         }
     }
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        // Detect if the player enters the NPC's range
+        // Detect when the player enters the interaction range (trigger zone)
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = true;
             Debug.Log("Player is near " + npcName);
-            // Optional: Show a UI prompt like "Press E to talk"
+
+            // Show the interaction prompt
+            if (interactionPrompt != null)
+            {
+                interactionPrompt.SetActive(true);
+            }
         }
     }
 
     void OnTriggerExit2D(Collider2D other)
     {
-        // Detect if the player leaves the NPC's range
+        // Detect when the player leaves the interaction range (trigger zone)
         if (other.CompareTag("Player"))
         {
             isPlayerNearby = false;
             Debug.Log("Player left " + npcName);
-            // Optional: Hide the UI prompt
+
+            // Hide the interaction prompt when player leaves
+            if (interactionPrompt != null)
+            {
+                interactionPrompt.SetActive(false);
+            }
         }
     }
 
-    void StartDialogue()
+    void ToggleFeedPanel()
     {
-        Debug.Log("Starting dialogue with " + npcName);
-
-        foreach (string line in dialogueLines)
+        if (FeedPanel != null)
         {
-            Debug.Log(line);
-        }
+            // Toggle the FeedPanel's active state (show or hide it)
+            bool isActive = FeedPanel.activeSelf;
+            FeedPanel.SetActive(!isActive);
 
-        // Optional: Call a UI dialogue manager to display the lines
-        // DialogueManager.Instance.StartDialogue(dialogueLines);
+            if (!isActive)
+                Debug.Log("FeedPanel opened.");
+            else
+                Debug.Log("FeedPanel closed.");
+        }
+        else
+        {
+            Debug.LogWarning("FeedPanel is not assigned!");
+        }
     }
 }
+
 
