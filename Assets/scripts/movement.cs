@@ -38,7 +38,14 @@ public class movement : MonoBehaviour
             AnimateMovement(Vector3.zero);
         }
 
-        OnMouseDown();
+        if (Input.GetMouseButtonDown(0))
+        {
+            Debug.Log("Sprite clicked!");
+            
+            Interact();
+        }
+
+        //OnMouseDown();
 
         // if (Input.GetKeyDown(KeyCode.Z)) 
         // {
@@ -56,14 +63,14 @@ public class movement : MonoBehaviour
     // 
     }
 
-    void OnMouseDown()
-    {
-        // Debug message to confirm the sprite was clicked
-        Debug.Log("Sprite clicked!");
+    // void OnMouseDown()
+    // {
+    //     // Debug message to confirm the sprite was clicked
+    //     Debug.Log("Sprite clicked!");
 
-        // Call your interaction logic
-        Interact();
-    }
+    //     // Call your interaction logic
+    //     Interact();
+    // }
 
     void Interact()
     {
