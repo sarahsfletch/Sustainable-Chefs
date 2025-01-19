@@ -1,6 +1,9 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEditor.UIElements;
 using UnityEngine;
 
-public class movement : MonoBehaviour 
+public class Movement : MonoBehaviour 
 {
     public float speed;
 
@@ -9,7 +12,7 @@ public class movement : MonoBehaviour
     public Animator animator;
 
     public LayerMask solidObjectsLayer;
-    public LayerMask interactiveLayer;
+    public LayerMask InteractiveLayer;
 
     private void Update () 
     {
@@ -89,7 +92,7 @@ public class movement : MonoBehaviour
 
         //Debug.DrawLine(transform.position, interactPos, Color.red, 1f);
 
-        var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactiveLayer);
+        var collider = Physics2D.OverlapCircle(interactPos, 0.2f, InteractiveLayer);
 
         if (collider != null) 
         {
@@ -121,13 +124,13 @@ public class movement : MonoBehaviour
         Vector3 targetPos = transform.position + direction * speed * Time.deltaTime;
 
         // Check for collisions at the target position
-        bool isWalkable = Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer | interactiveLayer) == null;
+        bool isWalkable = Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer | InteractiveLayer) == null;
 
         // Debug log for walkability
         Debug.Log("Is Walkable: " + isWalkable + " at Position: " + targetPos);
 
         // Check for collisions at the target position
-        return Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer | interactiveLayer) == null;
+        return Physics2D.OverlapCircle(targetPos, 0.1f, solidObjectsLayer | InteractiveLayer) == null;
 
         // sad old code
         // Vector3 targetPos = transform.position + direction * speed * Time.deltaTime;
