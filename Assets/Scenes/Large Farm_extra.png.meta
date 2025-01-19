@@ -1,0 +1,1825 @@
+fileFormatVersion: 2
+guid: b156465a26e3a4e54a3ac9c2ee5ccb63
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7785254873373030379
+    second: Large Farm_extra_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Large Farm_extra_0
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7374d2f08ca0c60800000000000000
+      internalID: 7785254873373030379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_1
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebfcf436ecc6f4428a922bddd1a84e9c
+      internalID: -699441027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_2
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614278be0ce4b4342b1e22426b196681
+      internalID: -320174382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_3
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123bc069c959e4cfc8fc08a0e95137ed
+      internalID: -1692990941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_4
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15844a32db3c44eaafa625e592040cd
+      internalID: 1767553545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_5
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 3026
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddb19097efaf4518b9e241c8236aae0
+      internalID: -1344540837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_6
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2726
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4ff5108579c4ffb9c95a428aed9846
+      internalID: -935680304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_7
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2726
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcec8da6d1ec24b77854d876a1b39437
+      internalID: 1434559639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_8
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2726
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8074cbc1d480245429d4145788c3b8a7
+      internalID: 122956127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_9
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2726
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 323a110749731496898c1c51cca4703b
+      internalID: 905680559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_10
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2726
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aad020baac3c943a4949e6a0c182724f
+      internalID: -1023182544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_11
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1da011d38fe154da5af33dd722cc51f5
+      internalID: 1866411158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_12
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2cd08b9fdf5e4638b3936344ea2be8b
+      internalID: -581352695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_13
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66eb37564d3284d36b5c6eb6bf450f7b
+      internalID: -845540913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_14
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3421d3b06db3c4347a63197a68a450b5
+      internalID: 661495828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_15
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1b042f9267e48a9976201590262f2c
+      internalID: 1365684513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_16
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 2426
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c696ba9be9c4e958bbe516c8495e9c
+      internalID: -260798396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_17
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 2126
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 294e9be8ed843421cb735d5dbb9a733b
+      internalID: 1969734659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_18
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 2126
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d98ee23bae5844f108e4d2858f068f37
+      internalID: -1083395213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_19
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 2126
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d800868aa2a4ba197c571a50910d96
+      internalID: -260301284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 2126
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c35e050d83d423da25ae6135b44051
+      internalID: -1791011422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_21
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 2126
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76f612173f034113a62265e82789d0b
+      internalID: 1040430606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_22
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39e0a1ab4f474375be03afb25b6d986
+      internalID: -1896601535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_23
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a4efe9f3b754489f8a70a1723f40b28
+      internalID: 840631625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_24
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e8627fd674d940179f863cbc8a43fae
+      internalID: -701372559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_25
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47624a739733e4dafa85c082eafecb39
+      internalID: -1230380176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_26
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c037139043a4d7cac74813a9ac9211
+      internalID: 1681734083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_27
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1826
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24acde728506d49e4a7f49ed8aeec281
+      internalID: -2139898866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_28
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 1526
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd6172b9bace7491ba97fa40192750d3
+      internalID: -864455214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_29
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 1526
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de668ddb80c14e6b8202cff9b660b7d
+      internalID: -1731694699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_30
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 1526
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd14dd70d0d7c46a28141c6acd0e6cd1
+      internalID: -1982984920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_31
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 1526
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ec9cda2f5bae454c9933d4d404b1387
+      internalID: -649057869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_32
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 1526
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21359a256542409e8993315fb36012b
+      internalID: -1466303947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_33
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1f26b5b6415446669d4a577df54a518
+      internalID: 2090763036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_34
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d01c0585bc14a5c9491d6badbd49cf
+      internalID: 722449466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_35
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e4c4cb1a7cd41659ed2699205fdf07
+      internalID: 426460672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_36
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac952a6264baf40bc91e6462c05eab2b
+      internalID: -614766716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_37
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5488dab770ae940709c8120f57d21fc8
+      internalID: 754876211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_38
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 1226
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d133c5a9059684db6a8b50b28a7f9e9f
+      internalID: -1897557441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_39
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 926
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51ea84ab05ef46ed806300c42d1d7d8
+      internalID: -2124422182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_40
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 926
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6edc3b0244814e5d8f7a785611dbc0c
+      internalID: 1704021215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_41
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 926
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7504baec6bb264f8183c806c38771cff
+      internalID: 362698971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_42
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 926
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8f2d8ffa6c74cf8a87473a556bcb2d
+      internalID: 1608352600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_43
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 926
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d513d32ca5a61427d99e2c5d30a4cfa5
+      internalID: -460682415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_44
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55ad64e498df44d27b4c3d7a9e8baec4
+      internalID: -1092289046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_45
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581dcb8e8743048aebae2de91077d17f
+      internalID: 173660062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_46
+      rect:
+        serializedVersion: 2
+        x: 2500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d772da4a521a441abafac8d8674e09fa
+      internalID: -565818419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_47
+      rect:
+        serializedVersion: 2
+        x: 3500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9b0a6a0f2a94cad9945929035a579c
+      internalID: -1897747868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_48
+      rect:
+        serializedVersion: 2
+        x: 4500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07637dfce24dd43deb287735618d6ed8
+      internalID: -287676594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_49
+      rect:
+        serializedVersion: 2
+        x: 5500
+        y: 626
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea491afa252cf47369321441b6fd0ab4
+      internalID: 2119470033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_50
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 326
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4836615b72b72449e84220bc10b8905d
+      internalID: -1669188188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_51
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 326
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04f009e4db9fd4cac8bb6e80e4edae78
+      internalID: 357364767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_52
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 326
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f113fc68714d46338f7a1db75a8a8be
+      internalID: 1478002936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_53
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 326
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9c6277dc7c140e4a9bd90d6b1b8bbd
+      internalID: 1484715936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Large Farm_extra_54
+      rect:
+        serializedVersion: 2
+        x: 5000
+        y: 326
+        width: 1000
+        height: 600
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      physicsShape:
+      - - {x: 0, y: -300}
+        - {x: 500, y: 0}
+        - {x: 0, y: 300}
+        - {x: -500, y: 0}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d13d460eab640422bacdacf9894dc67f
+      internalID: 530951492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: e7d1b32a891a24cc491e8ca5d39c0fb2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Large Farm_extra_0: 7785254873373030379
+      Large Farm_extra_1: -699441027
+      Large Farm_extra_10: -1023182544
+      Large Farm_extra_11: 1866411158
+      Large Farm_extra_12: -581352695
+      Large Farm_extra_13: -845540913
+      Large Farm_extra_14: 661495828
+      Large Farm_extra_15: 1365684513
+      Large Farm_extra_16: -260798396
+      Large Farm_extra_17: 1969734659
+      Large Farm_extra_18: -1083395213
+      Large Farm_extra_19: -260301284
+      Large Farm_extra_2: -320174382
+      Large Farm_extra_20: -1791011422
+      Large Farm_extra_21: 1040430606
+      Large Farm_extra_22: -1896601535
+      Large Farm_extra_23: 840631625
+      Large Farm_extra_24: -701372559
+      Large Farm_extra_25: -1230380176
+      Large Farm_extra_26: 1681734083
+      Large Farm_extra_27: -2139898866
+      Large Farm_extra_28: -864455214
+      Large Farm_extra_29: -1731694699
+      Large Farm_extra_3: -1692990941
+      Large Farm_extra_30: -1982984920
+      Large Farm_extra_31: -649057869
+      Large Farm_extra_32: -1466303947
+      Large Farm_extra_33: 2090763036
+      Large Farm_extra_34: 722449466
+      Large Farm_extra_35: 426460672
+      Large Farm_extra_36: -614766716
+      Large Farm_extra_37: 754876211
+      Large Farm_extra_38: -1897557441
+      Large Farm_extra_39: -2124422182
+      Large Farm_extra_4: 1767553545
+      Large Farm_extra_40: 1704021215
+      Large Farm_extra_41: 362698971
+      Large Farm_extra_42: 1608352600
+      Large Farm_extra_43: -460682415
+      Large Farm_extra_44: -1092289046
+      Large Farm_extra_45: 173660062
+      Large Farm_extra_46: -565818419
+      Large Farm_extra_47: -1897747868
+      Large Farm_extra_48: -287676594
+      Large Farm_extra_49: 2119470033
+      Large Farm_extra_5: -1344540837
+      Large Farm_extra_50: -1669188188
+      Large Farm_extra_51: 357364767
+      Large Farm_extra_52: 1478002936
+      Large Farm_extra_53: 1484715936
+      Large Farm_extra_54: 530951492
+      Large Farm_extra_6: -935680304
+      Large Farm_extra_7: 1434559639
+      Large Farm_extra_8: 122956127
+      Large Farm_extra_9: 905680559
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
