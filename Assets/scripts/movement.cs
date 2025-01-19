@@ -38,6 +38,15 @@ public class movement : MonoBehaviour
             AnimateMovement(Vector3.zero);
         }
 
+        OnMouseDown();
+
+        // if (Input.GetKeyDown(KeyCode.Z)) 
+        // {
+        //     Debug.Log("Z key pressed!");
+
+        //     Interact();
+        // }
+
     //     if (IsWalkable(direction) == true) 
     //     {
     //         AnimateMovement(direction);
@@ -47,6 +56,39 @@ public class movement : MonoBehaviour
     // 
     }
 
+    void OnMouseDown()
+    {
+        // Debug message to confirm the sprite was clicked
+        Debug.Log("Sprite clicked!");
+
+        // Call your interaction logic
+        Interact();
+    }
+
+    void Interact()
+    {
+        var facingDir = new Vector3(animator.GetFloat("horizontal"), animator.GetFloat("vertical"));
+         // Set a default direction if facingDir is zero
+        if (facingDir == Vector3.zero)
+        {
+            facingDir = new Vector3(1, 0); // Default to right
+        }
+
+        var interactPos = transform.position + facingDir;
+
+        Debug.Log("facingDir:" + facingDir);
+
+        Debug.Log("interactPos" + interactPos);
+
+        //Debug.DrawLine(transform.position, interactPos, Color.red, 1f);
+
+        var collider = Physics2D.OverlapCircle(interactPos, 0.2f, interactiveLayer);
+
+        if (collider != null) 
+        {
+            Debug.Log("there is a cow here!");
+        }
+    }
     void AnimateMovement(Vector3 direction)
     {   
         if (animator != null)
