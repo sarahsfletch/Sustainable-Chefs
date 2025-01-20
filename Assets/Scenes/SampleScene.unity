@@ -758,7 +758,6 @@ GameObject:
   m_Component:
   - component: {fileID: 580807911}
   - component: {fileID: 580807912}
-  - component: {fileID: 580807913}
   m_Layer: 0
   m_Name: UIManager
   m_TagString: Untagged
@@ -798,6 +797,7 @@ MonoBehaviour:
   feedImage: {fileID: 1674868249}
   feedPanel: {fileID: 1674868247}
   methanePanel: {fileID: 1205201310}
+  grassPanel: {fileID: 0}
   grainSprite: {fileID: 21300000, guid: 59a019d5194074ed0a522e33d98a07fd, type: 3}
   grassSprite: {fileID: 21300000, guid: 0b7896cd5660c4f8aa1e6ea2bef5e091, type: 3}
   cowAnimators:
@@ -805,20 +805,6 @@ MonoBehaviour:
   - {fileID: 997294552}
   cloudAnimator: {fileID: 95302067}
   cloudObject: {fileID: 95302066}
---- !u!114 &580807913
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 580807910}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b0c6260c80c84488b4e3a53395facb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bubblePrompt: {fileID: 1236159216}
-  delayBeforeBubble: 2
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,7 +2163,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1236159216}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2308,7 +2294,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1310222799}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: dd397d24c1f2847268e2214081566e15, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OnGrainButtonClicked()
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1310222799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2507,7 +2505,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1360126252}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: dd397d24c1f2847268e2214081566e15, type: 3}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: OnGrassButtonClicked()
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1360126252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2645,7 +2655,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -2765,8 +2775,8 @@ RectTransform:
   m_Children:
   - {fileID: 1168562978}
   - {fileID: 1674868248}
-  - {fileID: 1205201311}
   - {fileID: 1236159217}
+  - {fileID: 1205201311}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -2785,6 +2795,7 @@ GameObject:
   - component: {fileID: 1871812797}
   - component: {fileID: 1871812798}
   - component: {fileID: 1871812802}
+  - component: {fileID: 1871812806}
   - component: {fileID: 1871812800}
   - component: {fileID: 1871812801}
   - component: {fileID: 1871812803}
@@ -3037,6 +3048,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1871812806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1871812796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b0c6260c80c84488b4e3a53395facb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bubblePrompt: {fileID: 1236159216}
+  delayBeforeBubble: 3
 --- !u!1 &1965319032
 GameObject:
   m_ObjectHideFlags: 0

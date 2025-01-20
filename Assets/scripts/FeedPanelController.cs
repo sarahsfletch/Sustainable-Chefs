@@ -41,18 +41,18 @@ public class FeedPanelController : MonoBehaviour
         }
 
          // Make the cloud visible by enabling the GameObject
-        if (cloudObject != null)
-        {
-            cloudObject.SetActive(true); // Activate the cloud GameObject
-        }
+        // if (cloudObject != null)
+        // {
+        //     cloudObject.SetActive(true); // Activate the cloud GameObject
+        // }
 
         // Trigger the cloud fade-in animation
-        if (cloudAnimator != null)
-        {
-            cloudAnimator.SetTrigger("Appear"); // Trigger the fade-in animation
-        }
+        // if (cloudAnimator != null)
+        // {
+        //     cloudAnimator.SetTrigger("Appear"); // Trigger the fade-in animation
+        // }
 
-         
+         StartCoroutine(ShowCloudAfterDelay(1f));
          StartCoroutine(CloseFeedPanelAfterDelay(0.5f));
          // Start the coroutine to reset everything after 3 seconds
         StartCoroutine(ResetAfterDelay(5f)); // 3 seconds delay
@@ -60,6 +60,24 @@ public class FeedPanelController : MonoBehaviour
         
     }
 
+private IEnumerator ShowCloudAfterDelay(float delay)
+{
+    // Wait for the specified time (1 second)
+    yield return new WaitForSeconds(delay);
+
+    // Make the cloud visible by enabling the GameObject
+    if (cloudObject != null)
+    {
+        cloudObject.SetActive(true); // Activate the cloud GameObject
+        Debug.Log("Cloud object activated after 1 second.");
+
+        // Trigger the cloud fade-in animation if available
+        if (cloudAnimator != null)
+        {
+            cloudAnimator.SetTrigger("Appear");
+        }
+    }
+}
      // Coroutine to wait before closing the FeedPanel
     private IEnumerator CloseFeedPanelAfterDelay(float delay)
     {
