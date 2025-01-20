@@ -317,9 +317,13 @@ MonoBehaviour:
   newBoxSprite: {fileID: 21300000, guid: 58c519df441e84ab8b2e3e27f1eb4794, type: 3}
   originalBoxSprite: {fileID: 21300000, guid: 65094980436ed43c2a2e47ecf87499f6, type: 3}
   cropPanel: {fileID: 42099744}
+  cropPanelImage: {fileID: 42099746}
   waterButton: {fileID: 33881129}
   fertilizerButton: {fileID: 1089547605}
   harvestButton: {fileID: 180344049}
+  waterSprite: {fileID: -7891766802066486032, guid: b3675f7bba40c4e7997fe616e15121ab, type: 3}
+  fertilizerSprite: {fileID: 4161910491728807399, guid: b608f17cdf07c403e89bb7d5ff61bd5c, type: 3}
+  harvestSprite: {fileID: 6657614558206723001, guid: 380b7497beca645309d9f089c4111027, type: 3}
   cropAnimator: {fileID: 0}
   waterAnimationTrigger: Water
   fertilizerAnimationTrigger: Fertilize

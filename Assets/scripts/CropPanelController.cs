@@ -8,9 +8,16 @@ public class BoxInteraction : MonoBehaviour
     public Sprite newBoxSprite; // Sprite to change to on trigger
     public Sprite originalBoxSprite; // Store the original box sprite (set this in the Inspector)
     public GameObject cropPanel; // Reference to the CropPanel UI
+     public Image cropPanelImage;
     public Button waterButton; // Button for watering
     public Button fertilizerButton; // Button for fertilizing
     public Button harvestButton; // Button for harvesting
+
+[Header("Sprites for CropPanel")]
+    public Sprite waterSprite; // Sprite to display when the Water button is clicked
+    public Sprite fertilizerSprite; // Sprite to display when the Fertilizer button is clicked
+    public Sprite harvestSprite; // Sprite to display when the Harvest button is clicked
+
 
     [Header("Animations")]
     public Animator cropAnimator; // Animator for the crop/plant
@@ -82,7 +89,11 @@ public class BoxInteraction : MonoBehaviour
     private void OnWaterButtonClicked()
     {
         Debug.Log("Water button clicked");
-
+ // Change the CropPanel sprite to the water sprite
+        if (cropPanelImage != null && waterSprite != null)
+        {
+            cropPanelImage.sprite = waterSprite;
+        }
         // Trigger the water animation for the crop
         if (cropAnimator != null)
         {
@@ -93,7 +104,10 @@ public class BoxInteraction : MonoBehaviour
     private void OnFertilizerButtonClicked()
     {
         Debug.Log("Fertilizer button clicked");
-
+        if (cropPanelImage != null && fertilizerSprite != null)
+        {
+            cropPanelImage.sprite = fertilizerSprite;
+        }
         // Trigger the fertilizing animation for the crop
         if (cropAnimator != null)
         {
@@ -104,6 +118,11 @@ public class BoxInteraction : MonoBehaviour
     private void OnHarvestButtonClicked()
     {
         Debug.Log("Harvest button clicked");
+        
+        if (cropPanelImage != null && harvestSprite != null)
+        {
+            cropPanelImage.sprite = harvestSprite;
+        }
 
         // Trigger the harvest animation for the crop
         if (cropAnimator != null)
