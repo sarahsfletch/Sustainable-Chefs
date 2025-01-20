@@ -12,6 +12,8 @@ public class BoxInteraction : MonoBehaviour
     public Button waterButton; // Button for watering
     public Button fertilizerButton; // Button for fertilizing
     public Button harvestButton; // Button for harvesting
+    public GameObject BlueWater; // GameObject for the blue water effect (to be revealed by the mask)
+    public GameObject FertWater;
 
 [Header("Sprites for CropPanel")]
     public Sprite waterSprite; // Sprite to display when the Water button is clicked
@@ -19,16 +21,17 @@ public class BoxInteraction : MonoBehaviour
     public Sprite harvestSprite; // Sprite to display when the Harvest button is clicked
 
 
-    [Header("Animations")]
-    public Animator cropAnimator; // Animator for the crop/plant
-    public string waterAnimationTrigger = "Water"; // Trigger name for water animation
-    public string fertilizerAnimationTrigger = "Fertilize"; // Trigger name for fertilizing animation
-    public string harvestAnimationTrigger = "Harvest"; // Trigger name for harvest animation
+    // [Header("Animations")]
+    // public Animator cropAnimator; // Animator for the crop/plant
+    // public string waterAnimationTrigger = "Water"; // Trigger name for water animation
+    // public string fertilizerAnimationTrigger = "Fertilize"; // Trigger name for fertilizing animation
+    // public string harvestAnimationTrigger = "Harvest"; // Trigger name for harvest animation
 
     [Header("WaterAnimator")]     // Reference to the Water Button
     public Animator SpriteMask;    // Reference to the Animator of the object
     public string triggerName = "PlayWaterAnimation";
     private bool isPlayerNearby = false; // Check if the player is in range
+
 
     void Start()
     {
@@ -44,7 +47,7 @@ public class BoxInteraction : MonoBehaviour
         // Add listeners to the buttons
         waterButton.onClick.AddListener(OnWaterButtonClicked);
         fertilizerButton.onClick.AddListener(OnFertilizerButtonClicked);
-        harvestButton.onClick.AddListener(OnHarvestButtonClicked);
+        //harvestButton.onClick.AddListener(OnHarvestButtonClicked);
     }
 
     void Update()
@@ -97,11 +100,22 @@ public class BoxInteraction : MonoBehaviour
         {
             cropPanelImage.sprite = waterSprite;
         }
-        // Trigger the water animation for the crop
-        if (SpriteMask != null)
+       if (FertWater != null)
         {
-            SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
+            FertWater.SetActive(false);  // Hide the green water effect
         }
+
+        // Enable water mask and show the blue water effect
+        if (SpriteMask != null && BlueWater != null)
+        {
+            SpriteMask.SetTrigger(triggerName);  // Enable the water mask
+            BlueWater.SetActive(true);  // Show the blue water effect (revealed by the mask)
+        }
+        // Trigger the water animation for the crop
+        // if (SpriteMask != null)
+        // {
+        //     SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
+        // }
     }
 
     private void OnFertilizerButtonClicked()
@@ -112,25 +126,44 @@ public class BoxInteraction : MonoBehaviour
             cropPanelImage.sprite = fertilizerSprite;
         }
         // Trigger the fertilizing animation for the crop
-        if (cropAnimator != null)
+        if (BlueWater != null)
         {
-            cropAnimator.SetTrigger(fertilizerAnimationTrigger);
-        }
-    }
-
-    private void OnHarvestButtonClicked()
-    {
-        Debug.Log("Harvest button clicked");
-
-        if (cropPanelImage != null && harvestSprite != null)
-        {
-            cropPanelImage.sprite = harvestSprite;
+            BlueWater.SetActive(false);  // Hide the blue water effect
         }
 
-        // Trigger the harvest animation for the crop
-        if (cropAnimator != null)
+        // Enable fertilizer mask and show the green water effect
+        if (SpriteMask != null && FertWater != null)
         {
-            cropAnimator.SetTrigger(harvestAnimationTrigger);
+            SpriteMask.enabled = true;  // Enable the mask (same one used for both)
+            FertWater.SetActive(true);
+            SpriteMask.SetTrigger(triggerName);  // Show the green water effect (revealed by the mask)
         }
-    }
+
+        //  if (SpriteMask != null && FertWater != null)
+        // {
+        //     SpriteMask.enabled = true;  // Enable the fertilizer mask
+        //     FertWater.SetActive(true);  // Reveal and show the FertWater GameObject
+        // }
+        //  if (SpriteMask != null)
+        // {
+        //     SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
+        // }
+        }
+       
+
+    // private void OnHarvestButtonClicked()
+    // {
+    //     Debug.Log("Harvest button clicked");
+
+    //     if (cropPanelImage != null && harvestSprite != null)
+    //     {
+    //         cropPanelImage.sprite = harvestSprite;
+    //     }
+
+    //     // Trigger the harvest animation for the crop
+    //     if (cropAnimator != null)
+    //     {
+    //         cropAnimator.SetTrigger(harvestAnimationTrigger);
+    //     }
+    // }
 }
