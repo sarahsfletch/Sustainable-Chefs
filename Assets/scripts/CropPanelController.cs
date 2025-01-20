@@ -25,6 +25,9 @@ public class BoxInteraction : MonoBehaviour
     public string fertilizerAnimationTrigger = "Fertilize"; // Trigger name for fertilizing animation
     public string harvestAnimationTrigger = "Harvest"; // Trigger name for harvest animation
 
+    [Header("WaterAnimator")]     // Reference to the Water Button
+    public Animator SpriteMask;    // Reference to the Animator of the object
+    public string triggerName = "PlayWaterAnimation";
     private bool isPlayerNearby = false; // Check if the player is in range
 
     void Start()
@@ -95,9 +98,9 @@ public class BoxInteraction : MonoBehaviour
             cropPanelImage.sprite = waterSprite;
         }
         // Trigger the water animation for the crop
-        if (cropAnimator != null)
+        if (SpriteMask != null)
         {
-            cropAnimator.SetTrigger(waterAnimationTrigger);
+            SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
         }
     }
 
@@ -118,7 +121,7 @@ public class BoxInteraction : MonoBehaviour
     private void OnHarvestButtonClicked()
     {
         Debug.Log("Harvest button clicked");
-        
+
         if (cropPanelImage != null && harvestSprite != null)
         {
             cropPanelImage.sprite = harvestSprite;
