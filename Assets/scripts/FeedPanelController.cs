@@ -9,7 +9,8 @@ public class FeedPanelController : MonoBehaviour
     public Button grassButton;       // Reference to the Grass button
     public Image feedImage;  
     public GameObject feedPanel; 
-    public GameObject methanePanel;        // Reference to the image that will change
+    public GameObject methanePanel;       
+    public GameObject grassPanel;   // Reference to the image that will change
 
     [Header("Sprites")]
     public Sprite grainSprite;       // Sprite to display when Grain button is clicked
@@ -54,8 +55,9 @@ public class FeedPanelController : MonoBehaviour
          
          StartCoroutine(CloseFeedPanelAfterDelay(0.5f));
          // Start the coroutine to reset everything after 3 seconds
-        StartCoroutine(ResetAfterDelay(3f)); // 3 seconds delay
+        StartCoroutine(ResetAfterDelay(5f)); // 3 seconds delay
         StartCoroutine(ShowMethanePanelAfterDelay(0.5f));
+        
     }
 
      // Coroutine to wait before closing the FeedPanel
@@ -83,6 +85,7 @@ public class FeedPanelController : MonoBehaviour
             methanePanel.SetActive(true); // Activate the MethanePanel
         }
     }
+    
     private IEnumerator ResetAfterDelay(float delay)
     {
         // Wait for the specified time (3 seconds)
@@ -105,6 +108,10 @@ public class FeedPanelController : MonoBehaviour
         {
             methanePanel.SetActive(false); // Deactivate the methane panel
         }
+        if (grassPanel != null)
+        {
+            grassPanel.SetActive(false); // Deactivate the methane panel
+        }
     }
    
 
@@ -115,7 +122,20 @@ public class FeedPanelController : MonoBehaviour
         feedImage.sprite = grassSprite;
         Debug.Log("Grass selected");
 
+        StartCoroutine(ShowGrassPanelAfterDelay(0.5f));
+        StartCoroutine(ResetAfterDelay(5f));
         StartCoroutine(CloseFeedPanelAfterDelay(0.5f));
+    }
+      private IEnumerator ShowGrassPanelAfterDelay(float delay)
+    {
+        // Wait for the specified time (1 second)
+        yield return new WaitForSeconds(delay);
+
+        // Make the grassPanel visible after the delay
+        if (grassPanel != null)
+        {
+            grassPanel.SetActive(true); // Activate the grassPanel
+        }
     }
 }
 

@@ -14,7 +14,7 @@ public class Movement : MonoBehaviour
     public LayerMask solidObjectsLayer;
     public LayerMask InteractiveLayer;
 
-    private void Update () 
+    private void FixedUpdate () 
     {
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");
