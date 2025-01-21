@@ -17,6 +17,7 @@ public class BoxInteraction : MonoBehaviour
     public GameObject FertWater;
     public GameObject GreenOcean;
     public GameObject OysterPanel;
+    public GameObject PlantingPanel;
 
 [Header("Sprites for CropPanel")]
     public Sprite waterSprite; // Sprite to display when the Water button is clicked
@@ -205,5 +206,26 @@ private IEnumerator ShowAndHideFertilizerUIPanel()
     {
         cropPanel.SetActive(false);
     }
+    StartCoroutine(ShowAndHidePlantingUIPanel());
+    }
+    private IEnumerator ShowAndHidePlantingUIPanel()
+    {
+        // Wait for 1 second before showing the panel
+        yield return new WaitForSeconds(1f);
+
+        // Show the Fertilizer UI panel
+        if (PlantingPanel != null)
+        {
+            PlantingPanel.SetActive(true);
+        }
+
+        // Wait for 5 seconds before hiding the panel
+        yield return new WaitForSeconds(5f);
+
+        // Hide the Fertilizer UI panel
+        if (PlantingPanel != null)
+        {
+            PlantingPanel.SetActive(false);
+        }
     }
 }
