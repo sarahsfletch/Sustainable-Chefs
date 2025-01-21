@@ -9,7 +9,7 @@ public class BoxInteraction : MonoBehaviour
     public Sprite newBoxSprite; // Sprite to change to on trigger
     public Sprite originalBoxSprite; // Store the original box sprite (set this in the Inspector)
     public GameObject cropPanel; // Reference to the CropPanel UI
-     public Image cropPanelImage;
+    public Image cropPanelImage;
     public Button waterButton; // Button for watering
     public Button fertilizerButton; // Button for fertilizing
     public Button harvestButton; // Button for harvesting
@@ -91,8 +91,15 @@ public class BoxInteraction : MonoBehaviour
                 boxSpriteRenderer.sprite = originalBoxSprite;
             }
 
-            // Hide the CropPanel if open
-            cropPanel.SetActive(false);
+            // Check if cropPanel is not null before hiding it
+            if (cropPanel != null)
+            {
+                cropPanel.SetActive(false);
+            }
+            else
+            {
+                Debug.LogWarning("CropPanel is null and cannot be hidden.");
+            }
         }
     }
 
@@ -104,7 +111,7 @@ public class BoxInteraction : MonoBehaviour
         {
             cropPanelImage.sprite = waterSprite;
         }
-       if (FertWater != null)
+        if (FertWater != null)
         {
             FertWater.SetActive(false);  // Hide the green water effect
         }
@@ -160,8 +167,8 @@ public class BoxInteraction : MonoBehaviour
         // {
         //     SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
         // }
-        }
-        private IEnumerator HideCropPanelAfterDelay(float delay)
+    }
+    private IEnumerator HideCropPanelAfterDelay(float delay)
     {
         // Wait for the specified time (0.5 seconds)
         yield return new WaitForSeconds(delay);
@@ -202,11 +209,11 @@ private IEnumerator ShowAndHideFertilizerUIPanel()
         }
 
         // Trigger the harvest animation for the crop
-         if (cropPanel != null)
-    {
-        cropPanel.SetActive(false);
-    }
-    StartCoroutine(ShowAndHidePlantingUIPanel());
+        if (cropPanel != null)
+        {
+            cropPanel.SetActive(false);
+        }
+        StartCoroutine(ShowAndHidePlantingUIPanel());
     }
     private IEnumerator ShowAndHidePlantingUIPanel()
     {

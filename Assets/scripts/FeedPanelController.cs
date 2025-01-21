@@ -15,7 +15,7 @@ public class FeedPanelController : MonoBehaviour
     [Header("Sprites")]
     public Sprite grainSprite;       // Sprite to display when Grain button is clicked
     public Sprite grassSprite;       // Sprite to display when Grass button is clicked
-      public Animator[] cowAnimators;
+    public Animator[] cowAnimators;
     public Animator cloudAnimator;
     public GameObject cloudObject; 
     
