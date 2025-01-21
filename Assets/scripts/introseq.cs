@@ -30,9 +30,9 @@ public class introseq : MonoBehaviour
     {
     // Show studio name
     studioNamePanel.SetActive(true);
-    yield return FadeTo(studioNameCanvasGroup, 1f, 1f); // Fade in over 1 second
-    yield return new WaitForSeconds(3f); // Stay visible for 3 seconds
-    yield return FadeTo(studioNameCanvasGroup, 0f, 1f); // Fade out over 1 second
+    yield return FadeTo(studioNameCanvasGroup, 1f, 0.5f); // Fade in over .5 second
+    yield return new WaitForSeconds(1f); // Stay visible for 1 seconds
+    yield return FadeTo(studioNameCanvasGroup, 0f, 0.5f); // Fade out over .5 second
     studioNamePanel.SetActive(false);
 
     // Check if the gameTitleVideo is assigned
