@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using System.Collections;
 
 public class BoxInteraction : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class BoxInteraction : MonoBehaviour
     public Button harvestButton; // Button for harvesting
     public GameObject BlueWater; // GameObject for the blue water effect (to be revealed by the mask)
     public GameObject FertWater;
+    public GameObject GreenOcean;
+    public GameObject OysterPanel;
 
 [Header("Sprites for CropPanel")]
     public Sprite waterSprite; // Sprite to display when the Water button is clicked
@@ -104,6 +107,10 @@ public class BoxInteraction : MonoBehaviour
         {
             FertWater.SetActive(false);  // Hide the green water effect
         }
+        if (GreenOcean != null)
+        {
+            GreenOcean.SetActive(false);  // Hide the green water effect
+        }
 
         // Enable water mask and show the blue water effect
         if (SpriteMask != null && BlueWater != null)
@@ -111,6 +118,7 @@ public class BoxInteraction : MonoBehaviour
             SpriteMask.SetTrigger(triggerName);  // Enable the water mask
             BlueWater.SetActive(true);  // Show the blue water effect (revealed by the mask)
         }
+        StartCoroutine(HideCropPanelAfterDelay(0.5f));
         // Trigger the water animation for the crop
         // if (SpriteMask != null)
         // {
@@ -132,12 +140,15 @@ public class BoxInteraction : MonoBehaviour
         }
 
         // Enable fertilizer mask and show the green water effect
-        if (SpriteMask != null && FertWater != null)
+        if (SpriteMask != null && FertWater != null && GreenOcean != null)
         {
-            SpriteMask.enabled = true;  // Enable the mask (same one used for both)
+            //SpriteMask.SetTrigger("Idle");  // Enable the mask (same one used for both)
             FertWater.SetActive(true);
+            GreenOcean.SetActive(true);
             SpriteMask.SetTrigger(triggerName);  // Show the green water effect (revealed by the mask)
         }
+        StartCoroutine(HideCropPanelAfterDelay(0.5f));
+        StartCoroutine(ShowAndHideFertilizerUIPanel());
 
         //  if (SpriteMask != null && FertWater != null)
         // {
@@ -149,8 +160,37 @@ public class BoxInteraction : MonoBehaviour
         //     SpriteMask.SetTrigger(triggerName); // This will trigger the animation to play
         // }
         }
-       
+        private IEnumerator HideCropPanelAfterDelay(float delay)
+    {
+        // Wait for the specified time (0.5 seconds)
+        yield return new WaitForSeconds(delay);
 
+        // Hide the CropPanel
+        if (cropPanel != null)
+        {
+            cropPanel.SetActive(false);
+        }
+    }
+private IEnumerator ShowAndHideFertilizerUIPanel()
+    {
+        // Wait for 1 second before showing the panel
+        yield return new WaitForSeconds(1f);
+
+        // Show the Fertilizer UI panel
+        if (OysterPanel != null)
+        {
+            OysterPanel.SetActive(true);
+        }
+
+        // Wait for 5 seconds before hiding the panel
+        yield return new WaitForSeconds(5f);
+
+        // Hide the Fertilizer UI panel
+        if (OysterPanel != null)
+        {
+            OysterPanel.SetActive(false);
+        }
+    }
     // private void OnHarvestButtonClicked()
     // {
     //     Debug.Log("Harvest button clicked");
