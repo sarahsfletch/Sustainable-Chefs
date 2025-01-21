@@ -50,7 +50,7 @@ public class BoxInteraction : MonoBehaviour
         // Add listeners to the buttons
         waterButton.onClick.AddListener(OnWaterButtonClicked);
         fertilizerButton.onClick.AddListener(OnFertilizerButtonClicked);
-        //harvestButton.onClick.AddListener(OnHarvestButtonClicked);
+        harvestButton.onClick.AddListener(OnHarvestButtonClicked);
     }
 
     void Update()
@@ -191,19 +191,19 @@ private IEnumerator ShowAndHideFertilizerUIPanel()
             OysterPanel.SetActive(false);
         }
     }
-    // private void OnHarvestButtonClicked()
-    // {
-    //     Debug.Log("Harvest button clicked");
+    private void OnHarvestButtonClicked()
+    {
+        Debug.Log("Harvest button clicked");
 
-    //     if (cropPanelImage != null && harvestSprite != null)
-    //     {
-    //         cropPanelImage.sprite = harvestSprite;
-    //     }
+        if (cropPanelImage != null && harvestSprite != null)
+        {
+            cropPanelImage.sprite = harvestSprite;
+        }
 
-    //     // Trigger the harvest animation for the crop
-    //     if (cropAnimator != null)
-    //     {
-    //         cropAnimator.SetTrigger(harvestAnimationTrigger);
-    //     }
-    // }
+        // Trigger the harvest animation for the crop
+         if (cropPanel != null)
+    {
+        cropPanel.SetActive(false);
+    }
+    }
 }
